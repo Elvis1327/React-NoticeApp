@@ -1,0 +1,28 @@
+.main-loading{
+    width: 100%;
+    position: relative;
+    height: 50vh;
+}
+.loading{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    border: 13px solid #ccc;
+    border-left-color: lightblue;
+    animation-name: first-loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,104 @@
+
+
+._main-container-apple-notice{
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+// ALL INFORMATION LEFT
+._all-apple-notices-info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 10px;
+}
+
+// LAYOUT APPLE IZQUIERA
+._apple-container-left{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+// h1 tittle
+._apple-h1-tittle{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+// p description
+._apple-p-description-only{
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+
+// IMAGE
+._primer-apple-img img{
+    width: 415px;
+    height: 274px;
+}
+
+// ALL CARDS
+._all-notices-apple-container{
+    width: 30%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+// EACH CARD
+._apple-notices-card{
+    padding: 20px 0px 0px 20px;
+    font-family: 'Roboto';
+}
+
+// H1 CARD
+._apple-notice-card-h1{
+    font-size: 19px;
+}
+
+// IMAGE
+._apple-img-notice-card img{
+    width: 304px;
+    height: 203px;
+}
+
+
+// ANOTHER COMPONENT CONTAINER
+._cards-about-tech-crunch{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+// TECH-CRUND-CONTAINER- CARDS
+._tech-crunch-cards{
+    width: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 10px;
+}
+// TECH IMAGE
+.tech-crunch-image{
+    max-width: 100%;
+}
+._tech-crunch-image img{
+    max-width: 100%;
+}
+// TECH CRUNCH H1
+._tech-crunch-info-h1{
+    font-family: 'Roboto';
+}
+._tech-crunch-info-p{
+    font-family: 'Roboto';
+}
