@@ -1,15 +1,15 @@
 .main-loading{
     width: 100%;
     position: relative;
-    height: 50vh;
+    min-height: 100vh;
 }
 .loading{
     position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    left: 50%;
-    top: 50%;
+    left: 45%;
+    top: 30%;
     border: 13px solid #ccc;
     border-left-color: lightblue;
     animation-name: first-loading;

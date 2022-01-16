@@ -1,0 +1,35 @@
+.main-container-footer{
+    width: 100%;
+    position: relative;
+    top: 100%;
+    display: flex;
+    background-color: #212529;
+    align-items: center;
+    padding: 50px 80px;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+// H1
+._footer-main-info span{
+    font-size: 30px;
+}
+
+._footer-main-icons{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+// Icons
+._container-footer-icons{
+    display: block;
+    width: 53px;
+    height: 53px;
+    color: white;
+    background-color: #212529;
+    border: none;
+}

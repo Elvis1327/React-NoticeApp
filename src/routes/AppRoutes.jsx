@@ -1,22 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from '../components/shared/Navbar';
 import Home from '../components/shared/Home';
 import AppleNotice from '../components/notices/AppleNotices';
 import NotFound from '../components/shared/NotFound';
+import Footer from '../components/shared/Footer';
+import TeslaNotice from '../components/notices/TeslaNotice';
 
 const AppRouter = () => {
     return (
         <Router>
             <Navbar />
             <div>
-                <Switch>
-                    <Route exact path="/apple" component={AppleNotice} />
-                    <Route exact path="/" component={Home} />
-                    <Route exact path ="*" component={NotFound} /> 
-                </Switch>
+                <Routes>
+                    <Route path="/apple" element={<AppleNotice />} />
+                    <Route path="/tesla" element={<TeslaNotice />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path ="*" element={<NotFound />} /> 
+                </Routes>
             </div>
+            <Footer />
         </Router>
     )
 }

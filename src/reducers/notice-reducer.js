@@ -5,6 +5,8 @@ const initialState = {
     teslaNotices: [],
     appleNotices: [],
     techCrunch: [],
+    bussinesNotice: [],
+    swallNotices: [],
     loading: true
 };
 
@@ -20,6 +22,16 @@ export const noticeReducer = (state = initialState, action) => {
             return {
                 ...state,
                 techCrunch: action.payload
+            };
+        case TYPES.bussinesNotice:
+            return {
+                ...state,
+                bussinesNotice: action.payload
+            };
+        case TYPES.wallStreenNotice:
+            return {
+                ...state,
+                swallNotices: action.payload
             }
         default:
             return state;

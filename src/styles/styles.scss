@@ -6,11 +6,12 @@
 @import './components/navbar';
 @import './components//apple-notice';
 @import './components/loading';
+@import './components/footer';
+@import './components/home';
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+body{
+    min-height: 100vh;
 }
 
 

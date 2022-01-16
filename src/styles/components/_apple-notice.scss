@@ -6,22 +6,26 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 // ALL INFORMATION LEFT
 ._all-apple-notices-info{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    // width: 70%;
     row-gap: 10px;
 }
 
 // LAYOUT APPLE IZQUIERA
+
+._primer-apple-title-about-container{
+    padding: 20px;
+}
 ._apple-container-left{
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
     border: 1px solid #ccc;
 }
 
@@ -40,24 +44,28 @@
 
 // IMAGE
 ._primer-apple-img img{
-    width: 415px;
-    height: 274px;
+    width: 350px;
+    height: 250px;
 }
 
 // ALL CARDS
 ._all-notices-apple-container{
-    width: 30%;
-    border: 1px solid #ccc;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border-left: 1px solid #ccc;
-    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 // EACH CARD
 ._apple-notices-card{
-    padding: 20px 0px 0px 20px;
     font-family: 'Roboto';
+    width: 275px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 // H1 CARD
@@ -67,24 +75,29 @@
 
 // IMAGE
 ._apple-img-notice-card img{
-    width: 304px;
-    height: 203px;
+    width: 100%;
 }
 
 
 // ANOTHER COMPONENT CONTAINER
 ._cards-about-tech-crunch{
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
+    // display: flex;
+    // align-items: flex-start;
+    // gap: 20px;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 // TECH-CRUND-CONTAINER- CARDS
-._tech-crunch-cards{
-    width: 300px;
+._tech-crunch-card{
+    width: 275px;
+    max-width: 100%;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     row-gap: 5px;
     padding: 10px;
 }
@@ -98,6 +111,8 @@
 // TECH CRUNCH H1
 ._tech-crunch-info-h1{
     font-family: 'Roboto';
+    font-size: 20px;
+    margin-bottom: 4px;
 }
 ._tech-crunch-info-p{
     font-family: 'Roboto';

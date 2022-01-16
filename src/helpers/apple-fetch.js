@@ -12,6 +12,5 @@ export const appleNoticesFetch = async () => {
 export const techCrunchFetch = async () => {
     const { data } = await axios.get(`${MAINURL2}`);
     const { articles } = data;
-    console.log(articles)
     return articles;
 }
