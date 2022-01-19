@@ -1,5 +1,5 @@
 import { TYPES } from '../types/TYPES';
-import { appleNoticesFetch, techCrunchFetch, } from '../helpers/apple-fetch';
+import { appleNoticesFetch } from '../helpers/apple-fetch';
 import { homeDataFetch, swallStreetFetch } from '../helpers/home-fetch';
 
 // Apple notices
@@ -15,19 +15,6 @@ export const appleNoticesAction = () => {
         dispatch(appleNotices(resp));
     }
 };
-//  Notices Crunch
-const techCrunchNotice = (data) => {
-    return {
-        type: TYPES.techCrunch,
-        payload: data
-    }
-};
-export const techCrunchAction = () => {
-    return async (dispatch) => {
-        const resp = await techCrunchFetch();
-        dispatch(techCrunchNotice(resp));
-    }
-}
 // Bussines notice
 const bussinesNotice = (notice) => {
     return {

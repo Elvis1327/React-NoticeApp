@@ -26,3 +26,12 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width:599px){
+    .main-loading{
+        padding-top: 100px;
+    }
+    .loading{
+        left: 40%;
+    }
+}

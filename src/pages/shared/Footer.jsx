@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <section className="main-container-footer">
             <div className="_footer-main-info">
@@ -27,4 +27,4 @@ const Footer = () => {
         </section>
     );
 };
-export default Footer;
+

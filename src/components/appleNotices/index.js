@@ -1,0 +1,1 @@
+export { AllAppleNotices } from './AllAppleNotices';

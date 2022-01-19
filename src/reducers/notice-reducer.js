@@ -1,10 +1,8 @@
 import { TYPES } from '../types/TYPES';
 
-
 const initialState = {
     teslaNotices: [],
     appleNotices: [],
-    techCrunch: [],
     bussinesNotice: [],
     swallNotices: [],
     loading: true
@@ -17,11 +15,6 @@ export const noticeReducer = (state = initialState, action) => {
                 ...state,
                 appleNotices: action.payload,
                 loading: false
-            };
-        case TYPES.techCrunch:
-            return {
-                ...state,
-                techCrunch: action.payload
             };
         case TYPES.bussinesNotice:
             return {

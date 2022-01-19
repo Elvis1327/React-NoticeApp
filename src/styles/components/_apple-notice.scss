@@ -1,5 +1,3 @@
-
-
 ._main-container-apple-notice{
     width: 100%;
     padding: 50px 20px;
@@ -9,111 +7,111 @@
     flex-wrap: wrap;
 }
 
-// ALL INFORMATION LEFT
-._all-apple-notices-info{
-    display: flex;
-    flex-direction: column;
-    // width: 70%;
-    row-gap: 10px;
-}
-
 // LAYOUT APPLE IZQUIERA
-
-._primer-apple-title-about-container{
-    padding: 20px;
-}
 ._apple-container-left{
+    max-width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
     border: 1px solid #ccc;
 }
-
+._primer-apple-title-about-container{
+    padding: 20px;
+    width: 50%;
+}
 // h1 tittle
 ._apple-h1-tittle{
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
-
 // p description
 ._apple-p-description-only{
     font-size: 17px;
     font-family: 'Poppins';
+    margin: 0px;
 }
-
 // IMAGE
-._primer-apple-img img{
-    width: 350px;
-    height: 250px;
-}
-
-// ALL CARDS
-._all-notices-apple-container{
+._primer-apple-img{
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-    border: 1px solid #ccc;
+}
+._primer-apple-img img{
+    max-width: 100%;
+    width: 500px;
+}
+// Second Component All Cards
+._all-notices-apple-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 10px;
+    border: 1px solid #ccc;
 }
 // EACH CARD
 ._apple-notices-card{
     font-family: 'Roboto';
-    width: 275px;
+    // width: 285px;
+    max-width: 100%;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    transition: box-shadow 0.5s ease;
+    &:hover{
+        box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.514);
+        cursor: pointer;
+    }
 }
-
 // H1 CARD
 ._apple-notice-card-h1{
     font-size: 19px;
 }
-
 // IMAGE
+._apple-img-notice-card{
+    max-width: 100%;
+}
+
 ._apple-img-notice-card img{
+    max-width: 100%;
     width: 100%;
 }
 
 
-// ANOTHER COMPONENT CONTAINER
-._cards-about-tech-crunch{
-    // display: flex;
-    // align-items: flex-start;
-    // gap: 20px;
-    // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+@media screen and (max-width: 1200px){
+    ._all-notices-apple-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    ._primer-apple-title-about-container{
+        padding: 20px;
+        width: 100%;
+    }
+    ._primer-apple-img img{
+        max-width: 100%;
+        width: 100%;
+    }
 }
-// TECH-CRUND-CONTAINER- CARDS
-._tech-crunch-card{
-    width: 275px;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 5px;
-    padding: 10px;
+@media screen and (max-width: 975px){
+    ._all-notices-apple-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 }
-// TECH IMAGE
-.tech-crunch-image{
-    max-width: 100%;
+
+@media screen and (max-width: 670px){
+    ._all-notices-apple-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-._tech-crunch-image img{
-    max-width: 100%;
+
+@media screen and (max-width: 599px){
+    ._main-container-apple-notice{
+        padding-top: 100px;
+    }
+    ._apple-container-left{
+        flex-wrap: wrap;
+    }
 }
-// TECH CRUNCH H1
-._tech-crunch-info-h1{
-    font-family: 'Roboto';
-    font-size: 20px;
-    margin-bottom: 4px;
-}
-._tech-crunch-info-p{
-    font-family: 'Roboto';
-}
+
