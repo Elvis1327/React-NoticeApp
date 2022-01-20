@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const SwallNotice = ({notice, idx}) => {
+export const SwallNotice = ({notice}) => {
     return (
-        <div className="_home-page-right-info-card" key={idx}>
+        <div className="_home-page-right-info-card">
             <img 
                 src={notice.urlToImage} 
                 alt="notice-info"

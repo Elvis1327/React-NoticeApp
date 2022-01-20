@@ -25,6 +25,7 @@ export const AppleNotice = () => {
     };
     return (
         <section className="_main-container-apple-notice">
+            <h1 style={{fontSize: '50px', fontWeight: 'bold'}}>Apple Notices</h1>
             <div className="_apple-container-left">
                 <div className="_primer-apple-title-about-container">
                     <h1 className="_apple-h1-tittle">{data.title}</h1>
@@ -39,7 +40,7 @@ export const AppleNotice = () => {
             </div>
             <section className="_all-notices-apple-container">
                 {resp.map((notice, idx) => (
-                    <AllAppleNotices notice={notice} idx={idx} />
+                    <AllAppleNotices notice={notice} key={idx} />
                 ))}
             </section>
         </section>

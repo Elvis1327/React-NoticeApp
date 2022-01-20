@@ -1,0 +1,108 @@
+._main-container-tesla-notice{
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+._tesla-notice-main-h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+._tesla-notice-container{
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid #ccc;
+}
+
+._tesla-info-container{
+    width: 50%;
+    padding: 20px;
+}
+
+._tesla-img-container{
+    max-width: 100%;
+}
+
+._tesla-img-container img{
+    max-width: 100%;
+    width: 500px;
+}
+
+// Component AllTeslaNotices
+._all-tesla-notice-container{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+._all-tesla-notices-card{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.5s ease;
+    &:hover{
+        box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.514);
+        cursor: pointer;
+    }
+}
+
+._tesla-card-info{
+    padding: 20px;
+}
+
+._tesla-card-info h1{
+    font-size: 19px;
+}
+
+// Image
+._tesla-card-img{
+    max-width: 100%;
+}
+._tesla-card-img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width:1200px){
+    ._all-tesla-notice-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    ._tesla-info-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    ._all-tesla-notice-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    ._tesla-img-container{
+        max-width: 100%;
+    }
+    ._tesla-img-container img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 599px){
+    ._main-container-tesla-notice{
+        padding-top: 100px;
+    }
+    ._tesla-info-container{
+        width: 100%;
+    }
+}

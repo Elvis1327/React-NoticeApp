@@ -30,13 +30,13 @@ export const Home = () => {
                     {/* Left information */}
                     <div className="_home-page-left-info-cards">
                         {bussinesNotice.map((notice, idx) => (
-                            <BussinesNotice notice={notice} idx={idx} />
+                            <BussinesNotice notice={notice} key={idx} />
                         ))}
                     </div>
                     {/* Right information */}
                     <div className="_home-page-right-info-cards">
                         {resp.map((notice, idx) => (
-                            <SwallNotice notice={notice} idx={idx} />
+                            <SwallNotice notice={notice} key={idx} />
                         ))}
                     </div>
                 </section>

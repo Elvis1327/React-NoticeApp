@@ -2,9 +2,9 @@ import React from 'react';
 
 import notFoundImg from '../../assets/not-found.jpg';
 
-export const BussinesNotice = ({notice, idx}) => {
+export const BussinesNotice = ({notice}) => {
     return (
-        <div className="_home-page-left-info-card" key={idx}>
+        <div className="_home-page-left-info-card">
             <img 
                 src={notice.urlToImage || notFoundImg } 
                 alt="notice-pic"

@@ -5,7 +5,8 @@ const initialState = {
     appleNotices: [],
     bussinesNotice: [],
     swallNotices: [],
-    loading: true
+    loading: true,
+    teslaLoading: true
 };
 
 export const noticeReducer = (state = initialState, action) => {
@@ -25,6 +26,11 @@ export const noticeReducer = (state = initialState, action) => {
             return {
                 ...state,
                 swallNotices: action.payload
+            };
+        case TYPES.teslaNotice:
+            return {
+                ...state,
+                teslaNotices: action.payload
             }
         default:
             return state;

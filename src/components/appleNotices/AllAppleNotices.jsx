@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export const AllAppleNotices = ({notice, idx}) => {
+import imgNotFound from '../../assets/not-found.jpg';
+
+export const AllAppleNotices = ({notice}) => {
     return (
-        <div key={idx} className="_apple-notices-card">
+        <div className="_apple-notices-card">
             <div className="_apple-img-notice-card">
-                <img src={notice.urlToImage} alt="notice-pic" />
+                <img src={notice.urlToImage ? notice.urlToImage : imgNotFound} alt="notice-pic" />
             </div>
             <div className="_apple-info-notice-card-container" style={{padding: '20px'}}>
                 <div className="_apple-info-notice-card">

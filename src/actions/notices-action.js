@@ -1,6 +1,7 @@
 import { TYPES } from '../types/TYPES';
 import { appleNoticesFetch } from '../helpers/apple-fetch';
 import { homeDataFetch, swallStreetFetch } from '../helpers/home-fetch';
+import { getTeslaNoticesFetch } from '../helpers/tesla-fetch';
 
 // Apple notices
 const appleNotices = (notices) => {
@@ -40,7 +41,18 @@ export const swallStreetNoticeAction = () => {
         const resp = await swallStreetFetch();
         dispatch(swallStreetNotice(resp));
     }
+};
+// Tesla notices
+function getTeslaNotice(data){
+    return {
+        type: TYPES.teslaNotice,
+        payload: data
+    };
+};
+export const getTestlaNoticeAction = () => {
+    return async (dispatch) => {
+        const resp = await getTeslaNoticesFetch();
+        dispatch(getTeslaNotice(resp))
+    }
 }
-
-
 
